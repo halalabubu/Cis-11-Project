@@ -16,9 +16,9 @@ AND R2, R2, #0
 AND R3, R3, #0
 ADD R1, R1, #5 ;array length
 
-LEA R2, ARRAY ; x4000
+LEA R2, ARRAY
 AVGTOTALLOOP 
-LDR R0, R2, #0       ; load x4000 + offset
+LDR R0, R2, #0       ; ARRAY + offset
 ADD R2, R2, #1       ; R2++
 ADD R3, R3, R0
 ADD R1, R1, #-1 ; R1--
