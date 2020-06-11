@@ -1,12 +1,14 @@
-;Initialization of variables
 .ORIG x3000
-
+;Program start
 
 
 JSR	FINDAVERAGEFUNCTION 
 
 
 HALT
+;Program end
+
+
 
 ;CALC AVERAGE || Should be 75
 FINDAVERAGEFUNCTION
@@ -34,12 +36,14 @@ ST R3, averageTotal
 ;clear R1 and R2
 AND R2, R2, #0
 AND R3, R3, #0
-
 LD R1, averageTotal
+
 FINDAVGLOOP
-ADD R2, R2, #1
 ADD R1, R1, #-5
-BRp FINDAVGLOOP
+BRn ENDFINDAVGLOOP
+ADD R2, R2, #1
+JSR FINDAVGLOOP
+ENDFINDAVGLOOP
 
 ST R2, average
 LEA	R0,	average   
