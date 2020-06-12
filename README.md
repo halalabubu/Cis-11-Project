@@ -3,3 +3,4 @@ Project Description: To create an LC-3 program that displays the average, minimu
 Project Purpose: Assisting teachers in organizing and graing their students' exams.
 Creators: Jonathon Cookson, Todd Van Den Eykel, Jacob Arsenault.
 Date of Creation: 6/8/2020
+Program Usage: 
