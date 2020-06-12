@@ -7,6 +7,7 @@ JSR 	FINDMIN
 JSR 	FINDMAX
 JSR	DISPLAY
 
+ENDME
 HALT
 ;Program end
 
@@ -210,7 +211,8 @@ ADD R1, R1, #10
 ADD R0, R1, R2
 OUT
 
-RET
+JSR ENDME
+RET; doesnt work too far?
 
 
 ;Variables
