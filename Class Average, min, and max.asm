@@ -42,11 +42,11 @@ FINDAVGLOOP
 ADD R1, R1, #-5
 BRn ENDFINDAVGLOOP
 ADD R2, R2, #1
-JSR FINDAVGLOOP
+BR FINDAVGLOOP
 ENDFINDAVGLOOP
 
 ST R2, average
-LEA	R0,	average   
+;LEA	R0,	average   
 ;PUTS 
 RET
 ;calc min and max 
